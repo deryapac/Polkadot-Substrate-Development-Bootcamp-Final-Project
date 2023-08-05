@@ -1,0 +1,15 @@
+fn main() {
+
+    let string2 = String::from("Polkadot Rust Student");
+    let string1 = &string2[0..14];
+    let concatenated_string = concatenate_strings(string1.to_string());
+    println!("Concatenated string is {}", concatenated_string);
+
+}
+
+fn concatenate_strings (string1: String) -> String {
+    let string2 = "Student";
+    let mut concatenated_string = string1.clone();
+    concatenated_string.push_str(string2);
+    concatenated_string
+}
